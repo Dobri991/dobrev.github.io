@@ -21,6 +21,7 @@ body {
 }
 
 #left_side{
+    overflow: hidden;
     position: fixed;
     width: 25%;
     float: left;
@@ -49,7 +50,6 @@ body {
 #left_side_nav{
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
 }
 #left_side_nav #projects, #about{
     padding: 5px;
@@ -172,6 +172,7 @@ a.btn-outline:active {
         opacity: 0.6;
     }
 #left_side{
+    overflow: hidden;
     position: relative;
     width: 100%;
     height: 24rem;
