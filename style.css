@@ -164,7 +164,29 @@ a.btn-outline:active {
     opacity: 0.6;
 }
 /*-----------------------------------------------------------*/
-/*Media Queries for 640px screens*/
+/*Media Queries for 600px screens*/
+@media only screen and (max-width:600px){
+    #left_side{
+        height: 25rem;
+    }
+    #project_info{
+        font-size: 1rem;
+    }
+    #name{
+        padding-bottom: 5px;
+        padding-top: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;    
+    }
+    #saying{
+        padding-bottom: 0px;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fff;
+        opacity: 0.5;
+    }
+}
+/*Media Queries for 800px screens*/
 @media only screen and (max-width:800px){
     #project_info{
         padding-bottom: 0px;
