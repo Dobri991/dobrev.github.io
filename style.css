@@ -1,0 +1,326 @@
+/*
+    Design Inspired by Anjana Vakil
+    https://vakila.github.io/
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+body {
+    color: #515151;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+#left_side{
+    position: fixed;
+    width: 25%;
+    float: left;
+    height: 100%;
+    padding: 2rem 1rem;
+    background-color: #75b5aa;
+    color: rgba(255,255,255,.5);
+}
+#name{
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.25;
+}
+#saying{
+    padding-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.5;
+}
+#left_side_nav{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+#left_side_nav #projects, #about{
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+    display: flex;
+    justify-content: space-evenly;
+}/* Adapted from Alexandre Vicenzi https://alexandrevicenzi.com/ */
+.btn-social {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align:center;
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 2em;
+    line-height: 2.5em;
+}
+.btn-outline {
+    margin-top: 3vh;
+    border: solid 2px #fff;
+    font-size: 1em;
+}
+a.btn-outline {
+    color: inherit;
+}
+#left_side a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+#left_side a:active {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+#credits {
+  font-size: 0.8em;
+}
+
+#credits a {
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+/*a.btn-outline:active,*/
+a.btn-outline:hover {
+    opacity: .75;
+    background: 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+a.btn-outline:active {
+    opacity: 1;
+    background: #fff;
+    color: inherit;
+}
+
+.blog-nav {
+    margin-top: -2em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+/*Right Side Functionality / Projects*/
+#right_side{
+    z-index: 1010101010;
+    width: 70%;
+    float: right;
+    padding: 2rem 1rem;
+   margin-top: 50px;
+   padding-bottom: 20px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 1.5rem;
+   line-height: 1.5;
+}
+.project a {
+    text-decoration: none;
+    color: #75b5aa;
+}
+.project a:hover{
+    text-decoration: underline;
+    color: #75b5aa;
+}
+#project_info{
+    padding-bottom: 0px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #515151;
+    opacity: 0.6;
+}
+/*-----------------------------------------------------------*/
+/*Media Queries for 640px screens*/
+@media only screen and (max-width:800px){
+    #project_info{
+        padding-bottom: 0px;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #515151;
+        opacity: 0.6;
+    }
+#left_side{
+    position: relative;
+    width: 100%;
+    height: 24rem;
+    padding: 2rem 1rem;
+    background-color: #75b5aa;
+    color: rgba(255,255,255,.5);
+    text-align: left;
+}
+#name{
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.8rem;    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.25;
+}
+#saying{
+    padding-bottom: 0px;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.5;
+}
+#left_side_nav{
+    display: flex;
+    flex-direction: column;
+}
+#left_side_nav #projects, #about{
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Adapted from Alexandre Vicenzi https://alexandrevicenzi.com/ */
+.btn-social {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align:center;
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 2em;
+    line-height: 2.5em;
+}
+.btn-outline {
+    margin-top: 3vh;
+    border: solid 2px #fff;
+    font-size: 1em;
+}
+a.btn-outline {
+    color: inherit;
+}
+#left_side a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+#left_side a:active {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+#credits {
+  font-size: 0.8em;
+}
+
+#credits a {
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+/*a.btn-outline:active,*/
+a.btn-outline:hover {
+    opacity: .75;
+    background: 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+a.btn-outline:active {
+    opacity: 1;
+    background: #fff;
+    color: inherit;
+}
+
+.blog-nav {
+    margin-top: -2em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+/*Right Side Functionality / Projects*/
+#right_side{
+padding: 2rem 1rem;
+   margin-top: 50px;
+   padding-bottom: 20px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   z-index: 0;
+   width: 100%;
+   float: right;
+}
+/* #projects{
+
+} */
+}
+@media only screen and (max-width:1024px){
+    #name{
+        font-size: 2.4rem;    
+    }
+    #saying{
+    font-size: 1.5rem;
+
+    }
+
+}
+@media only screen and (max-width:1440px){
+    #name{
+        font-size: 2.6rem;    
+    }
+    #saying{
+    font-size: 1.5rem;
+
+    }
+
+}
+
+
+
